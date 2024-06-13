@@ -1,7 +1,46 @@
-Github Basics 
+# Gas fees and transactions
 
-Hi all ! You can pull request here in order to remove the extra blank. 
+## Transaction Fee
+- **Definition:** The amount paid to the block producer (miner/validator) for processing a transaction.
+- **Units:** Paid in Ether (ETH) or its smaller unit, GWei (1 Ether = 1,000,000,000 GWei).
+- **Importance:** Incentivizes miners/validators to process transactions.
 
-extra message
+## Gas Price
+- **Definition:** The cost per unit of gas required for a transaction.
+- **Units:** Also specified in Ether or GWei.
+- **Impact:** A higher gas price increases the likelihood of a transaction being processed quickly.
 
-extra extra message
+## Gas
+- **Definition:** Represents the computational effort needed to execute a transaction.
+- **Example:** Sending Ether is a simple transaction requiring less gas, while deploying a smart contract is more complex and requires more gas.
+
+## Calculating Transaction Fee
+- **Formula:** `Transaction fee = Gas Price * Gas Used`
+- **Example:** If the gas price is 20 GWei and the transaction uses 21,000 units of gas, the transaction fee is 20 * 21,000 = 420,000 GWei or 0.00042 Ether.
+
+# The Role of Nodes in Blockchain
+
+## Nodes
+- **Definition:** Computers running the blockchain network.
+- **Types:** Miners (Proof of Work) or Validators (Proof of Stake).
+- **Reward:** Receive the native currency of the blockchain for processing transactions (e.g., Ether for Ethereum).
+
+## Incentives
+- **Purpose:** Encourages people to run nodes and maintain the blockchain network.
+
+# Understanding Gas in Transactions
+
+## Gas in Transactions
+- **Definition:** A measure of the computational work required for a transaction.
+- **Complexity:** Simple transactions (like sending Ether) need less gas, while complex ones (like deploying a smart contract) need more.
+- **Example:**
+  - **Simple Transaction:** Sending 1 ETH to a friend may use 21,000 gas.
+  - **Complex Transaction:** Deploying a new smart contract might use 1,000,000 gas.
+
+# Example Transaction
+
+- **Sending 0.5 ETH to a friend.**
+- MetaMask suggests a gas price of 20 GWei.
+- The gas limit is 21,000.
+- **Calculation:** Transaction Fee = 20 GWei * 21,000 = 420,000 GWei or 0.00042 ETH.
+- **Total amount deducted:** 0.5 ETH (to friend) + 0.00042 ETH (transaction fee).
